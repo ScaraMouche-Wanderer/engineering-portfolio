@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <!-- Dark chip background -->
+  <rect x="2" y="2" width="28" height="28" rx="6" fill="#080c14" stroke="#38bdf8" stroke-width="1.5" />
+  
+  <!-- Corner pins -->
+  <circle cx="8" cy="8" r="1.5" fill="#38bdf8" />
+  <circle cx="24" cy="8" r="1.5" fill="#38bdf8" />
+  <circle cx="8" cy="24" r="1.5" fill="#34d399" />
+  <circle cx="24" cy="24" r="1.5" fill="#34d399" />
+  
+  <!-- Central core circuit -->
+  <rect x="10" y="10" width="12" height="12" rx="2.5" fill="url(#cyberGrad)" />
+  <polyline points="13,16 15,18 19,14" fill="none" stroke="#080c14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

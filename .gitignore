@@ -1,0 +1,57 @@
+# Dependencies
+node_modules
+**/node_modules
+.pnp
+.pnp.js
+
+# Next.js Build Output
+.next/
+out/
+build/
+dist/
+
+# Prisma
+/app/generated/prisma
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug & Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Scratch / Temporary Test Scripts
+scratch/
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS / System
+.DS_Store
+Thumbs.db
+
+# Local Workspace Reference Folders
+Project/
+
+# Private runtime databases and credentials
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+data.private.json
+.env.*
+!.env.example

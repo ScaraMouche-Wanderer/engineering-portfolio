@@ -1,0 +1,139 @@
+{
+  "tagline": "Embedded systems, Linux tools, and local AI \u2014 public source demonstration.",
+  "navItems": [
+    {
+      "id": "nav-home",
+      "sectionId": "home",
+      "label": "Home",
+      "order": 0
+    },
+    {
+      "id": "nav-projects",
+      "sectionId": "projects",
+      "label": "Projects",
+      "order": 1
+    },
+    {
+      "id": "nav-skills",
+      "sectionId": "skills",
+      "label": "Skills",
+      "order": 2
+    },
+    {
+      "id": "nav-contact",
+      "sectionId": "contact",
+      "label": "Contact",
+      "order": 3
+    }
+  ],
+  "coreAreas": [
+    {
+      "id": "ca-embedded",
+      "title": "Embedded systems",
+      "blurb": "From radio observations to observable firmware behavior.",
+      "points": [
+        "ESP32 and C++",
+        "Event-driven processing",
+        "Native host tests"
+      ]
+    },
+    {
+      "id": "ca-linux",
+      "title": "Linux applications",
+      "blurb": "Native desktop tools with explicit operating-system boundaries.",
+      "points": [
+        "Python and native UI",
+        "Process monitoring",
+        "Controllable input workflows"
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "id": "sg-embedded",
+      "name": "Embedded",
+      "accent": "cyan",
+      "items": [
+        "C",
+        "C++",
+        "ESP32",
+        "FreeRTOS",
+        "PlatformIO"
+      ]
+    },
+    {
+      "id": "sg-software",
+      "name": "Software",
+      "accent": "purple",
+      "items": [
+        "Python",
+        "TypeScript",
+        "Linux",
+        "SQLite",
+        "Git"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-facegate",
+      "title": "FaceGATE Linux",
+      "tag": "LINUX / COMPUTER VISION",
+      "summary": "A local face-recognition application locker with a native desktop interface.",
+      "impact": "Inspect authentication coordination, profile encryption, and the documented user-level threat model.",
+      "repoUrl": "https://github.com/ScaraMouche-Wanderer/FaceGATE-Linux",
+      "stack": [
+        "Python",
+        "PySide6",
+        "ONNX Runtime"
+      ],
+      "order": 0
+    },
+    {
+      "id": "proj-codewriter",
+      "title": "CodeWriter",
+      "tag": "LINUX / DESKTOP",
+      "summary": "A GTK editor and controllable input-automation utility.",
+      "impact": "Inspect text transformations, typing playback, pause, and cancellation.",
+      "repoUrl": "https://github.com/ScaraMouche-Wanderer/CodeWriter",
+      "stack": [
+        "Python",
+        "GTK4",
+        "ydotool"
+      ],
+      "order": 1
+    },
+    {
+      "id": "proj-prag",
+      "title": "PRAG",
+      "tag": "LOCAL AI / RETRIEVAL",
+      "summary": "A local research engine with cited evidence and explicit insufficient-evidence behavior.",
+      "impact": "Inspect document retrieval, evidence citations and local Ollama inference.",
+      "repoUrl": "https://github.com/ScaraMouche-Wanderer/prag-local-research",
+      "stack": [
+        "Python",
+        "Ollama",
+        "SQLite-vec"
+      ],
+      "order": 2
+    },
+    {
+      "id": "proj-rtos-swarm",
+      "title": "AeroMesh \u2014 interface simulation",
+      "tag": "INTERACTIVE SIMULATION",
+      "summary": "An interactive visual explanation of flight-control and RTOS concepts.",
+      "impact": "Simulated interface; no hardware or flight performance is established by this release.",
+      "repoUrl": null,
+      "stack": [
+        "React",
+        "TypeScript",
+        "Simulation"
+      ],
+      "order": 3
+    }
+  ],
+  "experience": [],
+  "education": [],
+  "certifications": [],
+  "journey": []
+}

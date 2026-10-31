@@ -1,0 +1,49 @@
+{
+  "name": "main_portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "db:sync": "npx tsx scripts/sync_data.ts",
+    "db:studio": "npx prisma studio",
+    "check:ready": "tsx scripts/check_ready.ts",
+    "test:deployment": "tsx --test lib/db-url.test.ts",
+    "demo": "next start --hostname 127.0.0.1"
+  },
+  "dependencies": {
+    "@docmentis/udoc-viewer": "^0.6.43",
+    "@libsql/client": "^0.17.2",
+    "@libsql/client-wasm": "^0.17.2",
+    "@prisma/adapter-better-sqlite3": "^7.7.0",
+    "@prisma/adapter-libsql": "^7.7.0",
+    "@prisma/client": "^6.19.3",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.0",
+    "better-sqlite3": "^12.9.0",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.8.0",
+    "next": "16.2.3",
+    "ogl": "^1.0.11",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.39",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
+    "prisma": "^6.19.3",
+    "shadcn": "^4.7.0",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
