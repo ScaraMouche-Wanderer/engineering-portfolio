@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Home, User, Cpu, Briefcase, Rocket, Map, Mail, GraduationCap, Code, 
-  Users, MapPin, ExternalLink, Copy, Check, Moon, Sun, ArrowRight, 
+  ExternalLink, Check, Moon, Sun, ArrowRight,
   ChevronDown, Sparkles, Shield, Radio, Layers, TerminalSquare, Activity, 
   ArrowUpRight, Award, Flame, Server, CheckCircle2, Zap
 } from "lucide-react";
@@ -299,7 +299,6 @@ export default function ClientPage({ navItems, coreAreas, skillGroups, experienc
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [copiedEmail, setCopiedEmail] = useState(false);
   // Keep server HTML and the first browser render identical. The layout's
   // pre-paint script applies the saved/system theme before hydration.
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -321,12 +320,6 @@ export default function ClientPage({ navItems, coreAreas, skillGroups, experienc
     setTheme(newTheme);
     document.documentElement.classList.toggle("light", newTheme === "light");
     localStorage.setItem("theme", newTheme);
-  };
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText("prathmeshnarwaria@gmail.com");
-    setCopiedEmail(true);
-    setTimeout(() => setCopiedEmail(false), 2000);
   };
 
   // Throttled scroll listener with robust offset tracking
@@ -444,7 +437,7 @@ export default function ClientPage({ navItems, coreAreas, skillGroups, experienc
           <a className="header-brand" href="#home">
             <span className="header-logo">PN</span>
             <div className="header-title-group">
-              <span className="header-name">Prathmesh Narwaria</span>
+              <span className="header-name">ScaraMouche-Wanderer</span>
               <span className="header-subtitle">Embedded + Software Systems</span>
             </div>
           </a>
@@ -1526,52 +1519,6 @@ export default function ClientPage({ navItems, coreAreas, skillGroups, experienc
 
         <div className="contact-panel">
           <div className="contact-left-col">
-            <motion.div 
-              className="contact-card circuit-runner-card"
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.05 }}
-            >
-              <div className="contact-card-icon radar-emitter">
-                <Mail size={24} />
-              </div>
-              <div style={{ wordBreak: 'break-all' }}>
-                <h4 style={{ fontSize: '0.85rem', color: 'var(--cyan)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.4rem', fontWeight: 700 }}>Direct Email</h4>
-                <p style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--foreground)' }}>prathmeshnarwaria@gmail.com</p>
-              </div>
-              <div style={{ marginTop: 'auto', display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap', paddingTop: '0.5rem' }}>
-                <a href="mailto:prathmeshnarwaria@gmail.com" className="minimal-link" style={{ fontSize: '0.92rem', fontWeight: 600 }}>
-                  Send Email <ExternalLink size={15} />
-                </a>
-                <button 
-                  onClick={handleCopyEmail}
-                  className="minimal-link" 
-                  style={{ fontSize: '0.92rem', border: 'none', background: 'none', cursor: 'pointer', padding: 0, color: copiedEmail ? 'var(--lime)' : 'var(--cyan)', fontWeight: 600 }}
-                >
-                  {copiedEmail ? "Copied to Clipboard!" : "Copy Email"} {copiedEmail ? <Check size={16} /> : <Copy size={16} />}
-                </button>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              className="contact-card circuit-runner-card"
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-            >
-              <div className="contact-card-icon radar-emitter">
-                <MapPin size={24} />
-              </div>
-              <div>
-                <h4 style={{ fontSize: '0.85rem', color: 'var(--cyan)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.4rem', fontWeight: 700 }}>Location</h4>
-                <p style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--foreground)' }}>Jaipur & Udaipur, India</p>
-                <div style={{ marginTop: '0.6rem', fontSize: '0.88rem', color: 'var(--lime)', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600 }}>
-                  Available for Full-Time & Relocation <span className="w-2 h-2 rounded-full bg-lime-400 radar-emitter inline-block" />
-                </div>
-              </div>
-            </motion.div>
 
             <motion.div 
               className="contact-card horizontal full-width circuit-runner-card"
@@ -1592,24 +1539,6 @@ export default function ClientPage({ navItems, coreAreas, skillGroups, experienc
               </a>
             </motion.div>
 
-            <motion.div 
-              className="contact-card horizontal full-width circuit-runner-card"
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <div className="contact-card-icon" style={{ flexShrink: 0 }}>
-                <Users size={24} />
-              </div>
-              <div style={{ flex: 1 }}>
-                <h4 style={{ fontSize: '0.85rem', color: 'var(--cyan)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.3rem', fontWeight: 700 }}>Professional Network</h4>
-                <p style={{ fontSize: '1rem', color: 'var(--foreground)', opacity: 0.85, margin: 0 }}>Connect with me for engineering collaborations and opportunities.</p>
-              </div>
-              <a href="https://linkedin.com/in/prathmesh-narwaria" target="_blank" rel="noreferrer" className="reactive-button secondary" style={{ minWidth: 'auto', padding: '0.65rem 1.4rem', fontSize: '0.92rem', fontWeight: 600 }}>
-                <span>LinkedIn ↗</span>
-              </a>
-            </motion.div>
           </div>
 
           {/* Contact Form */}

@@ -47,7 +47,7 @@ export default function CyberTerminal() {
   const [isOpen, setIsOpen] = useState(false);
   const [inputVal, setInputVal] = useState("");
   const [history, setHistory] = useState<HistoryItem[]>([
-    { id: "init-1", type: "system", content: "⚡ PRATHMESH-OS // Embedded Firmware & Kernel Diagnostics Architecture v5.18.2" },
+    { id: "init-1", type: "system", content: "⚡ ScaraMouche-Wanderer-OS // Embedded Firmware & Kernel Diagnostics Architecture v5.18.2" },
     { id: "init-2", type: "system", content: "Target: ARM Cortex-M4 (STM32F405) + Linux POSIX Daemon | FreeRTOS Kernel Online" },
     { id: "init-3", type: "system", content: "Type 'help' or click any quick command chip below to execute interactive hardware probes." },
   ]);
@@ -96,7 +96,7 @@ export default function CyberTerminal() {
 
     const newHistory: HistoryItem[] = [
       ...history,
-      { id: getNextId(), type: "input", content: `visitor@prathmesh-mcu:~$ ${trimmed}` }
+      { id: getNextId(), type: "input", content: `visitor@ScaraMouche-Wanderer-mcu:~$ ${trimmed}` }
     ];
 
     const cmd = trimmed.toLowerCase();
@@ -111,7 +111,7 @@ export default function CyberTerminal() {
           type: "output",
           content: (
             <div className="flex flex-col gap-2 font-mono text-xs">
-              <span className="text-[var(--cyan)] font-bold tracking-wider">⚡ PRATHMESH-OS INTERACTIVE COMMAND CATALOG:</span>
+              <span className="text-[var(--cyan)] font-bold tracking-wider">⚡ ScaraMouche-Wanderer-OS INTERACTIVE COMMAND CATALOG:</span>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-200">
                 <div className="p-2 rounded bg-white/5 border border-white/10">
                   <span className="text-lime-300 font-bold block cursor-pointer hover:underline" onClick={() => handleCommand("probe facegate")}>probe &lt;project&gt;</span>
@@ -402,9 +402,9 @@ export default function CyberTerminal() {
           type: "output",
           content: (
             <div className="font-mono text-xs text-slate-200 leading-relaxed">
-              <div className="text-cyan-300 font-bold">visitor@prathmesh-embedded-rig</div>
+              <div className="text-cyan-300 font-bold">visitor@ScaraMouche-Wanderer-embedded-rig</div>
               <div>----------------------------------------</div>
-              <div><strong className="text-lime-400">OS:</strong> Prathmesh-RTOS / Arch Linux ARM64 (Kernel 6.8.0)</div>
+              <div><strong className="text-lime-400">OS:</strong> ScaraMouche-Wanderer-RTOS / Arch Linux ARM64 (Kernel 6.8.0)</div>
               <div><strong className="text-lime-400">Host:</strong> Custom STM32F405 + ESP32-S3 Dual-Core Hybrid</div>
               <div><strong className="text-lime-400">Toolchain:</strong> arm-none-eabi-gcc 13.2.1, Rust 1.77, Next.js 16</div>
               <div><strong className="text-lime-400">Architecture:</strong> ARM Cortex-M4F @ 168 MHz (Hardware FPU)</div>
@@ -420,7 +420,7 @@ export default function CyberTerminal() {
         newHistory.push({
           id: getNextId(),
           type: "output",
-          content: "Prathmesh Narwaria — Electronics & Communication Engineer specializing in RTOS firmware, embedded hardware prototyping, deterministic control loops, and modern web software integrations."
+          content: "ScaraMouche-Wanderer — Electronics & Communication Engineer specializing in RTOS firmware, embedded hardware prototyping, deterministic control loops, and modern web software integrations."
         });
         break;
 
@@ -491,7 +491,7 @@ export default function CyberTerminal() {
         newHistory.push({
           id: getNextId(),
           type: "error",
-          content: "visitor is not in the sudoers file. This incident has been logged and reported to Prathmesh."
+          content: "visitor is not in the sudoers file. This incident has been logged and reported to ScaraMouche-Wanderer."
         });
         break;
 
@@ -599,7 +599,7 @@ export default function CyberTerminal() {
                   </div>
                   <span className="text-xs text-[var(--cyan)] font-bold tracking-wider flex items-center gap-1.5">
                     <Cpu size={14} />
-                    visitor@prathmesh-os:~ (firmware-cli-v5.18)
+                    visitor@ScaraMouche-Wanderer-os:~ (firmware-cli-v5.18)
                   </span>
                 </div>
 

@@ -12,11 +12,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Prathmesh Narwaria | Embedded Systems & Software Architecture",
+  title: "ScaraMouche-Wanderer | Embedded Systems & Software Architecture",
   description:
-    "Portfolio of Prathmesh Narwaria — Electronics and Communication Engineer specializing in RTOS firmware, embedded systems, low-level C/C++/Rust architecture, IoT mesh networks, and full-stack integration.",
+    "Portfolio of ScaraMouche-Wanderer — Electronics and Communication Engineer specializing in RTOS firmware, embedded systems, low-level C/C++/Rust architecture, IoT mesh networks, and full-stack integration.",
   keywords: [
-    "Prathmesh Narwaria",
+    "ScaraMouche-Wanderer",
     "Embedded Systems Engineer",
     "Firmware Developer",
     "FreeRTOS",
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     "IoT",
     "Electronics and Communication",
   ],
-  authors: [{ name: "Prathmesh Narwaria", url: "https://github.com/ScaraMouche-Wanderer" }],
-  creator: "Prathmesh Narwaria",
+  authors: [{ name: "ScaraMouche-Wanderer", url: "https://github.com/ScaraMouche-Wanderer" }],
+  creator: "ScaraMouche-Wanderer",
   openGraph: {
-    title: "Prathmesh Narwaria | Embedded Systems & Software Architecture",
+    title: "ScaraMouche-Wanderer | Embedded Systems & Software Architecture",
     description:
       "Explore interactive hardware simulators, RTOS swarms, firmware telemetry, and engineering deep dives.",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prathmesh Narwaria | Embedded Systems & Software Architecture",
+    title: "ScaraMouche-Wanderer | Embedded Systems & Software Architecture",
     description:
       "Explore interactive hardware simulators, RTOS swarms, firmware telemetry, and engineering deep dives.",
   },

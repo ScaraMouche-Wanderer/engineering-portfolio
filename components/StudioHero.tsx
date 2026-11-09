@@ -12,7 +12,7 @@ export default function StudioHero({ onSelectProject }: StudioHeroProps) {
     <section id="home" className="studio-home" aria-labelledby="studio-heading">
       <div className="studio-hero-grid">
         <div className="studio-intro">
-          <p className="studio-eyebrow"><span /> Independent engineering / Prathmesh Narwaria</p>
+          <p className="studio-eyebrow"><span /> Independent engineering / ScaraMouche-Wanderer</p>
           <h1 id="studio-heading">Between silicon<br />&amp; <em>software.</em></h1>
           <p className="studio-description">
             I build embedded systems, Linux tools, and local AI that connect
